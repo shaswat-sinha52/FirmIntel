@@ -62,8 +62,19 @@ git commit -m "Add new feature"
 git push origin feature-branch
 ```
 **5)Create a pull request.**
+**Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding standards and is well-documented.**
 
 ## Important Functionalities
 - **Search Functionality**: Allows users to search for companies and retrieve data using the searchCompany function.
 - **Trending News Fetching**: Fetches the latest technology news using the fetchTrendingNews function.
 - **Display Information**: Displays various company information such as tech stack, market competitors, Alexa rank, associated industries, technologies used, and stock information.
+
+## Contact
+
+For any questions or feedback, please contact:
+
+- **Shaswat Sinha**
+- **Officialshaswat2021@gmail.com**
+  
+
+Thank you for checking out the Hand Gesture Recognition project!
