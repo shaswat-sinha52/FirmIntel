@@ -64,6 +64,6 @@ git push origin feature-branch
 5)Create a pull request.
 
 ## Important Functionalities
-1)Search Functionality: Allows users to search for companies and retrieve data using the searchCompany function.
-2)Trending News Fetching: Fetches the latest technology news using the fetchTrendingNews function.
-3)Display Information: Displays various company information such as tech stack, market competitors, Alexa rank, associated industries, technologies used, and stock information.
+- Search Functionality: Allows users to search for companies and retrieve data using the searchCompany function.
+- Trending News Fetching: Fetches the latest technology news using the fetchTrendingNews function.
+- Display Information: Displays various company information such as tech stack, market competitors, Alexa rank, associated industries, technologies used, and stock information.
