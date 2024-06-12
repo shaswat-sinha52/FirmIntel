@@ -48,6 +48,8 @@ cd company-info
 Open the index.html file in your preferred web browser.
 
 ## Contribution
+**Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding standards and is well-documented.**
+
 **1)Fork the repository:**
 **2)Create a new branch:**
 ```bash
@@ -62,7 +64,6 @@ git commit -m "Add new feature"
 git push origin feature-branch
 ```
 **5)Create a pull request.**
-**Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding standards and is well-documented.**
 
 ## Important Functionalities
 - **Search Functionality**: Allows users to search for companies and retrieve data using the searchCompany function.
