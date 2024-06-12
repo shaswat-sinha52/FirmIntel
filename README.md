@@ -26,10 +26,10 @@ Company Info is a web application designed to provide detailed information about
 
 ## Project Structure
 Company-Info/
-├── index.html # The main HTML file
-├── style.css # The CSS file for styling
-├── script.js # The JavaScript file for functionalities
-├── README.md # The README file for the project
+- index.html # The main HTML file
+- style.css # The CSS file for styling
+- script.js # The JavaScript file for functionalities
+- README.md # The README file for the project
 
 
 ## Cloning Guidelines
@@ -37,21 +37,30 @@ To clone this repository, follow these steps:
 
 1. Open your terminal or command prompt.
 2. Run the following command:
-   ```bash
+```bash
    git clone https://github.com/yourusername/company-info.git
+```
 
-## Navigate to the project directory
+## 3)Navigate to the project directory
+```bash
 cd company-info
+```
 Open the index.html file in your preferred web browser.
 
 ## Contribution
-1)Fork the repository.
-2)Create a new branch
-```git checkout -b feature-branch
+- 1)Fork the repository.
+- 2)Create a new branch
+```bash
+git checkout -b feature-branch
+```
 3)Make your changes and commit them:
-```git commit -m "Add new feature"
+```bash
+git commit -m "Add new feature"
+```
 4)Push to the branch:
-```git push origin feature-branch
+```bash
+git push origin feature-branch
+```
 5)Create a pull request.
 
 ## Important Functionalities
