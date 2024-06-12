@@ -71,7 +71,7 @@ git push origin feature-branch
 - **Trending News Fetching**: Fetches the latest technology news using the fetchTrendingNews function.
 - **Display Information**: Displays various company information such as tech stack, market competitors, Alexa rank, associated industries, technologies used, and stock information.
 
-## Contact
+## Contact Us
 
 For any questions or feedback, please contact:
 
