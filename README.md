@@ -48,22 +48,22 @@ cd company-info
 Open the index.html file in your preferred web browser.
 
 ## Contribution
-- 1)Fork the repository.
-- 2)Create a new branch
+**1)Fork the repository:**
+**2)Create a new branch:**
 ```bash
 git checkout -b feature-branch
 ```
-3)Make your changes and commit them:
+**3)Make your changes and commit them:**
 ```bash
 git commit -m "Add new feature"
 ```
-4)Push to the branch:
+**4)Push to the branch:**
 ```bash
 git push origin feature-branch
 ```
-5)Create a pull request.
+**5)Create a pull request.**
 
 ## Important Functionalities
-- Search Functionality: Allows users to search for companies and retrieve data using the searchCompany function.
-- Trending News Fetching: Fetches the latest technology news using the fetchTrendingNews function.
-- Display Information: Displays various company information such as tech stack, market competitors, Alexa rank, associated industries, technologies used, and stock information.
+- **Search Functionality**: Allows users to search for companies and retrieve data using the searchCompany function.
+- **Trending News Fetching**: Fetches the latest technology news using the fetchTrendingNews function.
+- **Display Information**: Displays various company information such as tech stack, market competitors, Alexa rank, associated industries, technologies used, and stock information.
