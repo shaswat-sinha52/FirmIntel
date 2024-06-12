@@ -26,10 +26,10 @@ Company Info is a web application designed to provide detailed information about
 
 ## Project Structure
 Company-Info/
-- index.html # The main HTML file
-- style.css # The CSS file for styling
-- script.js # The JavaScript file for functionalities
-- README.md # The README file for the project
+- index.html --> The main HTML file
+- style.css -->  The CSS file for styling
+- script.js -->  The JavaScript file for functionalities
+- README.md -->  The README file for the project
 
 
 ## Cloning Guidelines
@@ -51,6 +51,7 @@ Open the index.html file in your preferred web browser.
 **Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding standards and is well-documented.**
 
 **1)Fork the repository:**
+
 **2)Create a new branch:**
 ```bash
 git checkout -b feature-branch
