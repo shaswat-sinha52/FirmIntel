@@ -14,7 +14,7 @@ async function searchCompany(event) {
     return;
   }
 
-  const url = `${apiUrl}?name=${companyName}&token=${token}&simplified=true`;
+  const url = `${apiUrl}?name=${companyName}&token=${token}`;
 
   try {
     const response = await fetch(url);
@@ -60,13 +60,26 @@ function displayCompanyInfo(data) {
     competitorsCard.innerHTML = "<li>No data available</li>";
   }
 
-  // Display Alexa Rank
-  const alexaCard = document.getElementById("alexa-rank");
-  if (company.alexaRank) {
-    alexaCard.innerHTML = `<p>${company.alexaRank}</p>`;
-  } else {
-    alexaCard.innerHTML = "<p>No data available</p>";
-  }
+  // Display Alexa Card Information
+  const alexaRankElement = document.getElementById("alexa-rank");
+const revenueElement = document.getElementById("alexa-revenue");
+const monthlyVisitorsElement = document.getElementById("alexa-monthly-visitors");
+const foundedYearElement = document.getElementById("alexa-founded-year");
+const phoneNumberElement = document.getElementById("alexa-phone-number");
+
+if (company.alexaRank || company.revenue || company.monthlyVisitors || company.foundedYear || company.phoneNumber) {
+  alexaRankElement.innerHTML = `<strong>Alexa Rank:</strong> ${company.alexaRank || "No data available"}`;
+  revenueElement.innerHTML = `<strong>Revenue:</strong> ${company.revenue || "No data available"}`;
+  monthlyVisitorsElement.innerHTML = `<strong>Monthly Visitors:</strong> ${company.monthlyVisitors || "No data available"}`;
+ 
+  phoneNumberElement.innerHTML = `<strong>Phone Number:</strong> ${company.phoneNumber || "No data available"}`;
+} else {
+  alexaRankElement.innerHTML = "<p>No data available</p>";
+  revenueElement.innerHTML = "<p></p>";
+  monthlyVisitorsElement.innerHTML = "<p></p>";
+  phoneNumberElement.innerHTML = "<p></p>";
+}
+
 
   // Display Associated Industries
   const industriesCard = document.getElementById("industries-list");
@@ -99,6 +112,7 @@ function displayCompanyInfo(data) {
     stockSymbol.innerHTML = "<p></p>";
   }
 }
+
 
 // Function to fetch and display trending technology news
 async function fetchTrendingNews() {
@@ -134,6 +148,17 @@ function displayTrendingNews(newsData) {
     newsContainer.innerHTML = "<p>No news available</p>";
   }
 }
+
+//toggle button working
+const toggle_btn=document.getElementById("checkbox")
+console.log(toggle_btn)
+toggle_btn.addEventListener('change',()=>{
+  if(toggle_btn.checked){
+    document.body.classList.add('dark-mode')
+  }else{
+    document.body.classList.remove('dark-mode')
+  }
+})
 
 // Attach event listener to the search button
 document.querySelector(".search-bar button").addEventListener("click", searchCompany);
