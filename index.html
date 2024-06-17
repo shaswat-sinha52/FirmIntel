@@ -1,93 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Company Info</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="navbar-brand">Company Info</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firm Intel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-brand">Firm Intel</div>
     <div class="navbar-links">
       <a href="#">Home</a>
       <a href="#">Contact Us</a>
       <a href="#">About Us</a>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <div class="container">
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input id="search-bar" type="text" placeholder="Search by company name">
-      <button type="button">Search</button>
-    </div>
-
-    <!-- Information Section -->
-    <div id="info-section">
-      <div class="info-block">
-        <h2>Why this website?</h2>
-        <p>This website provides personalized and real-time updated info, even better than Google.</p>
-      </div>
-
-      <div class="grid">
-        <!-- Popular Tech stack -->
-        <div id="tech-stack-card" class="card">
-          <h3>Popular Tech stack</h3>
-          <ul id="tech-stack-list"></ul>
-        </div>
-
-        <!-- Market Competitors -->
-        <div id="competitors-card" class="card">
-          <h3>Market Competitors</h3>
-          <ul id="competitors-list"></ul>
-        </div>
-
-        <!-- Alexa Rank -->
-        <div id="alexa-card" class="card">
-          <h3>Alexa Rank</h3>
-          <p id="alexa-rank"></p>
-          <p id="alexa-domain"></p>
-          <p id="alexa-description"></p>
-        </div>
-
-        <!-- Associated Industries -->
-        <div id="industries-card" class="card">
-          <h3>Associated Industries</h3>
-          <ul id="industries-list"></ul>
-        </div>
-
-        <!-- Technologies Used -->
-        <div id="technologies-card" class="card">
-          <h3>Technologies Used</h3>
-          <ul id="technologies-list"></ul>
-        </div>
-
-        <!-- Stock Information -->
-        <div id="stock-card" class="card">
-          <h3>Stock Information</h3>
-          <p id="stock-exchange"></p>
-          <p id="stock-symbol"></p>
+      <a>
+        <div class="toggle-btn">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle-label">
+            <span class="toggleball"></span>
+          </label>
         </div>
       </div>
-
-      <!-- Trending Tech News -->
-      <div class="info-block">
-        <h2>Trending Technology News</h2>
-        <div id="trending-news">
-          <!-- Trending news will be inserted here -->
+      </a>
+    </div>
+      <div class="nav-row">
+        <div class="navsearch">
+          <div class="search-bar">
+            <input
+              id="search-bar"
+              type="text"
+              placeholder="Search by company name"
+            />
+            <button type="button">Search</button>
+          </div>
+        </div>
+        
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Information Section -->
+      <div id="info-section">
+        <div class="info-block des">
+          <h2>Why this website?</h2>
+          <p>
+            Welcome to your ultimate destination for comprehensive company
+            information. This website is meticulously designed to serve as a
+            one-stop hub for anyone seeking detailed and up-to-date insights
+            about various companies. Our platform leverages advanced APIs to
+            provide real-time updates and accurate information on a wide array
+            of companies, whether they are new startups or well-established
+            enterprises. By using our website, you will have access to
+            structured and personalized information at your fingertips. No
+            longer do you need to juggle between multiple sites and tabs to
+            gather details about a company. With just a single click, you can
+            obtain all the relevant information you need. Our platform provides
+            in-depth data on technologies used by the company, stock
+            information, market competitors, Alexa rank, company descriptions,
+            associated industries, and much more. We aim to save your valuable
+            time by presenting all this information in an elegant and
+            user-friendly manner. Our commitment is to keep you informed with
+            the latest developments in the technology sector, particularly
+            within India. Whether you are an investor, researcher, or simply
+            curious about a company's profile, our website ensures you have
+            everything you need in one place. In essence, our platform stands
+            out by offering a seamless and efficient way to stay updated with
+            the latest technology trends and company information. Why go
+            anywhere else when all the essential details are right here,
+            organized and ready for you? Explore the world of companies
+            effortlessly and stay ahead with the most reliable and current
+            information available.
+          </p>
+        </div>
+        <div class="infoblock2"></div>
+        <div class="grid">
+          <!-- Popular Tech stack -->
+          <div id="tech-stack-card" class="card">
+            <h3>Popular Tech Stack</h3>
+            <ul id="tech-stack-list"></ul>
+          </div>
+          <!-- Market Competitors -->
+          <div id="competitors-card" class="card">
+            <h3>Market Competitors</h3>
+            <ul id="competitors-list"></ul>
+          </div>
+          <!-- Alexa Rank -->
+          <div id="alexa-card" class="card">
+            <h3>Overview</h3>
+            <p id="alexa-rank"></p>
+            <p id="alexa-revenue"></p>
+            <p id="alexa-monthly-visitors"></p>
+            <p id="alexa-phone-number"></p>
+          </div>
+          <!-- Associated Industries -->
+          <div id="industries-card" class="card">
+            <h3>Associated Industries</h3>
+            <ul id="industries-list"></ul>
+          </div>
+          <!-- Technologies Used -->
+          <div id="technologies-card" class="card">
+            <h3>Technologies Used</h3>
+            <ul id="technologies-list"></ul>
+          </div>
+          <!-- Stock Information -->
+          <div id="stock-card" class="card">
+            <h3>Stock Information</h3>
+            <p id="stock-exchange"></p>
+            <p id="stock-symbol"></p>
+          </div>
+        </div>
+        
+        <!-- Trending Tech News -->
+        <div class="info-block nws">
+          <h2>Trending Technology News</h2>
+          <div id="trending-news">
+            <!-- Trending news will be inserted here -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2024 Developed by Your Name</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2024 Developed by Your Name</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
