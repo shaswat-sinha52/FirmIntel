@@ -12,15 +12,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="brandlogo1.png">
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-      <div class="navbar-brand"></div>
+      <div id="logo" class="navbar-brand"></div>
     <div class="navbar-links">
-      <a href="#">Home</a>
-      <a href="#">Contact Us</a>
-      <a href="#">About Us</a>
+      <a id="home-link" href="#">Home</a>
+      <a id="contact-link" href="#">Contact Us</a>
+      <a id="about-link" href="#">About Us</a>
       <a>
         <div class="toggle-btn">
           <input type="checkbox" id="checkbox" />
@@ -45,6 +46,8 @@
         
     </nav>
     <!-- Main Content -->
+    <main>
+      <div id="home" class="content active">
     <div class="container">
       <!-- Information Section -->
       <div id="info-section">
@@ -126,9 +129,24 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="about" class="content">
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veniam dolores vel qui illum. Velit rem commodi omnis perspiciatis, repellendus recusandae odio maiores laboriosam aspernatur error reiciendis accusantium earum sequi a reprehenderit porro. Minus, neque! Quia veniam eius incidunt hic dolorum iusto fugit vel debitis laborum qui, ratione earum aut natus? Dolore natus quo eum?</p>
+    </div>
+</div>
+<div id="contact" class="content">
+  <div class="container">
+      <h1>Contact Us</h1>
+      <p>For inquiries, please email us at devfeedback2024@gmail.com</p>
+  </div>
+</div>
+  </main>
     <!-- Footer -->
     <footer class="footer">
-      <p>© 2024 Developed by Your Name</p>
+      <p>&copy; 2024 CodeVie. All rights reserved to <b>Shaswat Sinha & Bisleri</b>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
