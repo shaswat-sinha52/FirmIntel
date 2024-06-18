@@ -181,9 +181,6 @@ body {
   .navbar-links a {
     color: white;
   }
-  .des {
-    margin-top: 70px;
-  }
 }
 
 .container {
@@ -226,7 +223,11 @@ body {
   box-shadow: 4px 6px 16px 8px #222;
   cursor: pointer;
 }
-
+@media screen and (max-width: 1024px) {
+  .des {
+    margin-top: 150px;
+  }
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr;
