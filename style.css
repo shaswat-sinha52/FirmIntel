@@ -35,8 +35,20 @@ body {
 }
 
 .navbar-brand {
-  font-size: 14px;
-  width: 132px;
+  background-image: url("brandlogo.png");
+  background-size: contain; /* Changed from cover to contain */
+  background-repeat: no-repeat;
+  height: 70px; /* Set a fixed height */
+  width: 150px; /* Set a fixed width */
+  margin: 0 auto; /* Center the logo in the flex container */
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-brand {
+    height: 50px; /* Adjust height for smaller screens */
+    width: 100px; /* Adjust width for smaller screens */
+    margin-bottom: 10px; /* Keep margin-bottom for spacing */
+  }
 }
 
 .navsearch {
@@ -158,10 +170,10 @@ body {
     width: 100%;
   }
 
-  .navbar-brand {
+  /*.navbar-brand {
     font-size: 14px;
     margin-bottom: 10px;
-  }
+  }*/
 
   .navsearch {
     width: 70%;
