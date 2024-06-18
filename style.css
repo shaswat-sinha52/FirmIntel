@@ -41,6 +41,7 @@ body {
   height: 70px; /* Set a fixed height */
   width: 150px; /* Set a fixed width */
   margin: 0 auto; /* Center the logo in the flex container */
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -392,4 +393,10 @@ body.dark-mode .footer {
 body.dark-mode .news-item {
   background-color: #333333;
   color: #ffffff;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
 }
