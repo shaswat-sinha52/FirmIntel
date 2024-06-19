@@ -80,4 +80,4 @@ For any questions or feedback, please contact:
 - **Officialshaswat2021@gmail.com**
   
 
-Thank you for checking out the Hand Gesture Recognition project!
+Thank you for checking out the FirmIntel Project!
