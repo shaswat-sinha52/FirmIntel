@@ -195,7 +195,6 @@ body {
     color: white;
   }
 }
-
 .container {
   padding: 20px;
   margin-top: 40px;
@@ -328,13 +327,20 @@ ul {
   background-color: #0f1111;
   color: white;
   text-align: center;
-  padding: 15px 15px;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   position: fixed;
   bottom: 0;
   height: 30px;
   width: 100%;
 }
-
+@media screen and (max-width: 500px) {
+  .footer {
+    height: 50px;
+    margin-right: 10px;
+  }
+}
 .news-item {
   display: flex;
   justify-content: space-between;
@@ -399,4 +405,86 @@ body.dark-mode .news-item {
 }
 .content.active {
   display: block;
+}
+#contact {
+  border: 2px solid white;
+  margin-top: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  text-align: center;
+}
+#about {
+  border: 2px solid white;
+  margin-top: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 90px;
+  border-radius: 30px;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.backimg,
+.frontimg {
+  height: 130px;
+  width: 140px;
+  background-size: cover;
+  border: 2px solid black;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.backimg {
+  background-image: url("Prof_pic.jpeg");
+}
+
+.frontimg {
+  background-image: url("profile_picture.jpg");
+}
+
+.abt {
+  text-align: left;
+}
+@media screen and (max-width: 1024px) {
+  .team-member {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .backimg,
+  .frontimg {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+body.dark-mode #about,
+body.dark-mode #contact {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+#contact:hover {
+  border: 1px solid grey;
+  box-shadow: 4px 6px 16px 8px #222;
+  cursor: pointer;
+}
+#about:hover {
+  border: 1px solid grey;
+  box-shadow: 4px 6px 16px 8px #222;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  #contact {
+    margin-top: 250px;
+  }
+  #about {
+    margin-top: 250px;
+  }
 }
